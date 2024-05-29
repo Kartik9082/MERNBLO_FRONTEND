@@ -13,7 +13,7 @@ const PostInfo = () => {
   const blog = useSelector((store) => store?.blogs?.singleBlog?.data?.post);
   const userId = blog?.author?._id;
 
-  console.log(blog, "image");
+  console.log(blog?.blogImage, "image");
   if (!blog)
     return (
       <div className="text-red-600 font-medium text-2xl text-center flex justify-center  items-center">
